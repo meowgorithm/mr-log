@@ -5,17 +5,17 @@ import System.Exit ( exitFailure, exitWith )
 
 printInfo :: String -> IO ()
 printInfo =
-    putStrLn . ("[INFO]" ++)
+    putStrLn . ("[INFO] " ++)
 
 printWarn :: String -> IO ()
 printWarn =
-    putStrLn . ("[WARN]" ++)
+    putStrLn . ("[WARN] " ++)
 
 printErr :: String -> IO ()
 printErr =
-    putStrLn . ("[ERROR]" ++)
+    putStrLn . ("[ERROR] " ++)
 
 fatal :: String -> IO ()
 fatal s =
-    putStrLn ("[FATAL]" ++ s) >>
+    putStrLn ("[FATAL] " ++ s) >>
     void exitFailure

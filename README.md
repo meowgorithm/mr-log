@@ -1,8 +1,8 @@
 Mr. Log
 =======
 
-A fistfull of Haskell functions for printing log info to the terminal.
-
+A fistfull of Haskell functions for printing log info and, in one case, also
+exiting with error.
 
 ```haskell
 import System.IO.MrLog ( printInfo, printWarn, printError, fatal )
@@ -25,13 +25,12 @@ main = do
     -- Prints:
     -- [FATAL] something went very wrong!
     -- ...and exits
-    fatal "Something went very wrong!"
+    fatal "something went very wrong!"
 ```
 
 ## Author
 
 [Christian Rocha](https://github.com/meowgorithm)
-
 
 ## License
 
