@@ -5,7 +5,7 @@ A fistfull of Haskell functions for printing log info and, in one case, also
 exiting with error.
 
 ```haskell
-import System.IO.MrLog ( printInfo, printWarn, printError, fatal )
+import System.IO.MrLog ( printInfo, printWarn, printErr, fatal )
 
 main :: IO ()
 main = do
@@ -16,11 +16,11 @@ main = do
 
     -- Prints:
     -- [WARN] uh oh
-    printInfo "uh oh"
+    printWarn "uh oh"
 
     -- Prints:
     -- [ERROR] oh no
-    printInfo "oh no"
+    printErr "oh no"
 
     -- Prints:
     -- [FATAL] something went very wrong!
