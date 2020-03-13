@@ -1,7 +1,7 @@
 module System.IO.MrLog ( printInfo, printWarn, printErr, fatal ) where
 
 import Control.Monad ( void )
-import System.Exit ( exitFailure, exitWith )
+import System.Exit ( exitFailure )
 
 printInfo :: String -> IO ()
 printInfo =
