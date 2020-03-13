@@ -1,37 +1,30 @@
-cabal-version: 1.12
+cabal-version: 2.20
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
---
--- see: https://github.com/sol/hpack
---
--- hash: a2a3973f0dee74e792c6c2710807fe6455126aa4b26390f3e6d5aebdb68ee85e
-
-name:           mr-log
-version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/mr-log#readme>
-homepage:       https://github.com/meowgorithm/mr-log#readme
-bug-reports:    https://github.com/meowgorithm/mr-log/issues
-author:         Christian Rocha
-maintainer:     christian@rocha.is
-copyright:      2020 Christian Rocha
-license:        MIT
-license-file:   LICENSE
-build-type:     Simple
-extra-source-files:
-    README.md
-    ChangeLog.md
+name: mr-log
+version: 0.1.0.0
+description:
+  A fistfull of Haskell functions for printing log info and, in one case, also
+  exiting with error. For more info see the README on GitHub at
+  <https://github.com/githubuser/mr-log#readme>.
+homepage: https://github.com/meowgorithm/mr-log#readme
+bug-reports: https://github.com/meowgorithm/mr-log/issues
+license: MIT
+license-file: LICENSE
+author: Christian Rocha
+maintainer: christian@rocha.is
+copyright: 2020 Christian Rocha
+build-type: Simple
+extra-source-files: ChangeLog.md, README.md
 
 source-repository head
   type: git
   location: https://github.com/meowgorithm/mr-log
 
 library
-  exposed-modules:
-      System.IO.MrLog
-  other-modules:
-      Paths_mr_log
-  hs-source-dirs:
-      src
-  build-depends:
-      base >=4.7 && <5
   default-language: Haskell2010
+  exposed-modules: System.IO.MrLog
+  hs-source-dirs: src
+  build-depends:
+    base >=4.7 && <5
+  ghc-options:
+    -Wall
