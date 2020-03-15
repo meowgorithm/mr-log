@@ -2,10 +2,12 @@ cabal-version: 2.20
 
 name: mr-log
 version: 0.1.0.0
+synopsis: Simple Haskell functions for logging
 description:
   A fistfull of Haskell functions for printing log info and, in one case, also
   exiting with error. For more info see the README on GitHub at
   <https://github.com/githubuser/mr-log#readme>.
+category: logging
 homepage: https://github.com/meowgorithm/mr-log#readme
 bug-reports: https://github.com/meowgorithm/mr-log/issues
 license: MIT
