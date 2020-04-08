@@ -1,5 +1,5 @@
 {-|
-Module      : System.Environment.MrEnv
+Module      : System.IO.MrLog
 Description : Simple functins for logging
 Copyright   : (c) 2020 Christian Rocha
 License     : MIT
